@@ -4,68 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
 
-<body class="font-opensans bg-codgray px-5 py-8 space-y-4">
-    <header>
-        <div id="about" class="flex flex-col justify-center items-center py-5 px-3 space-y-4">
-            <img class="w-3/6" src="./assets/images/profile.png" alt="profile picture">
-            <h1 class="text-wildsand font-firacode text-2xl">Darshit Jain</h1>
-            <p class="text-silverchalice font-opensans text-center">
-                Aspiring software engineer currently pursuing a B.E. in Computer Science and Engineering from Chitkara
+<body class=" bg-codgray font-opensans px-5 py-8 lg:px-10">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-x-[10%] lg:gap-y-24">
+        <header class="lg:order-1 lg:col-span-2">
+            <div class="hidden lg:block max-w-[50%] mx-auto">
+                <ul class="flex justify-evenly items-center text-wildsand">
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#">Home</a></li>
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#about">About</a></li>
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#education">Education</a></li>
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#skills">Skills</a></li>
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#projects">Projects</a></li>
+                    <li class="nav-hover hover:text-silverchalice relative"><a href="#resume">Resume</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="about"
+            class="flex-col-place-center py-5 px-3 space-y-4 lg:order-2 lg:items-start lg:border-2px-solid-rounded lg:border-mineshaft">
+            <img class="w-3/6 lg:w-1/4" src="./assets/images/profile.png" alt="profile picture">
+            <h1 class="text-wildsand font-firacode text-2xl lg:text-3xl">Darshit Jain</h1>
+            <p class="text-silverchalice text-center lg:text-left">
+                Aspiring software engineer currently pursuing a B.E. in Computer Science and Engineering from
+                Chitkara
                 University. Passionate about coding, problem-solving, and building innovative solutions. Constantly
-                learning and eager to contribute to impactful projects. Seeking opportunities to grow, collaborate, and
+                learning and eager to contribute to impactful projects. Seeking opportunities to grow, collaborate,
+                and
                 make a difference in the tech world. Let's connect and create the future together!
             </p>
         </div>
-    </header>
-    <main class="space-y-9">
-        <div class="space-y-1">
-            <h2 class="text-wildsand font-firacode">Connect With Me...</h2>
-            <hr class="text-mineshaft" />
-            <div class="flex flex-wrap gap-3 pt-2">
-                <button class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <a href="https://www.linkedin.com/in/djain9906" class="flex justify-center items-center space-x-2"
-                        target="_blank" rel="noopener noreferrer">
-                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/FFFFFF/linkedin-2--v1.png"
-                            alt="linkedin-2--v1" />
-                        <i class="text-silverchalice">LinkedIn</i>
-                    </a>
-                </button>
-                <button class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <a href="https://github.com/TheAmazingDeveloper" class="flex justify-center items-center space-x-2"
-                        target="_blank" rel="noopener noreferrer">
-                        <img width="20" height="20" src="https://img.icons8.com/glyph-neue/FFFFFF/github.png"
-                            alt="github" />
-                        <i class="text-silverchalice">Github</i>
-                    </a>
-                </button>
-                <button class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <a href="mailto:darshitjain09092006@gmail.com" class="flex justify-center items-center space-x-2"
-                        target="_blank" rel="noopener noreferrer">
-                        <img width="20" height="20"
-                            src="https://img.icons8.com/ios-filled/FFFFFF/secured-letter--v1.png"
-                            alt="secured-letter--v1" />
-                        <i class="text-silverchalice">Mail</i>
-                    </a>
-                </button>
-                <button class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <a href="https://www.instagram.com/darshit560/" class="flex justify-center items-center space-x-2"
-                        target="_blank" rel="noopener noreferrer">
-                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/FFFFFF/instagram-new--v1.png"
-                            alt="instagram-new--v1" />
-                        <i class="text-silverchalice">Instagram</i>
-                    </a>
-                </button>
+        <div class="lg:order-4 lg:flex lg:flex-col lg:justify-around lg:gap-y-10">
+            <div class="mt-8 space-y-1 lg:order-2 lg:space-y-3 lg:mt-0">
+                <h2 class="text-wildsand font-firacode lg:text-2xl">./Connect With Me...</h2>
+                <hr class="text-mineshaft lg:hidden" />
+                <div class="wrap gap-3 pt-2 lg:pt-0">
+                    <button
+                        class="py-2 px-4 border-2px-solid-rounded border-mineshaft lg:bg-wildsand lg:border-wildsand">
+                        <a href="https://www.linkedin.com/in/djain9906" class="flex-row-place-center space-x-2"
+                            target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source media="(min-width: 1024px)"
+                                    srcset="https://img.icons8.com/ios-filled/121212/linkedin-2--v1.png"">
+                                <img width=" 20" height="20"
+                                    src="https://img.icons8.com/ios-filled/FFFFFF/linkedin-2--v1.png"
+                                    alt="linkedin-2--v1" />
+                            </picture>
+                            <i class="text-silverchalice lg:text-codgray">LinkedIn</i>
+                        </a>
+                    </button>
+                    <button
+                        class="py-2 px-4 border-2px-solid-rounded border-mineshaft lg:bg-wildsand lg:border-wildsand">
+                        <a href="https://github.com/TheAmazingDeveloper" class="flex-row-place-center space-x-2"
+                            target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source media="(min-width:1024px)"
+                                    srcset="https://img.icons8.com/glyph-neue/121212/github.png" />
+                                <img width="20" height="20" src="https://img.icons8.com/glyph-neue/FFFFFF/github.png"
+                                    alt="github" />
+                            </picture>
+                            <i class="text-silverchalice lg:text-codgray">Github</i>
+                        </a>
+                    </button>
+                    <button
+                        class="py-2 px-4 border-2px-solid-rounded border-mineshaft lg:bg-wildsand lg:border-wildsand">
+                        <a href="mailto:darshitjain09092006@gmail.com" class="flex-row-place-center space-x-2"
+                            target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source media="(min-width:1024px)"
+                                    srcset="https://img.icons8.com/ios-filled/121212/secured-letter--v1.png" />
+                                <img width="20" height="20"
+                                    src="https://img.icons8.com/ios-filled/FFFFFF/secured-letter--v1.png"
+                                    alt="secured-letter--v1" />
+                            </picture>
+                            <i class="text-silverchalice lg:text-codgray">Mail</i>
+                        </a>
+                    </button>
+                    <button
+                        class="py-2 px-4 border-2px-solid-rounded border-mineshaft lg:bg-wildsand lg:border-wildsand">
+                        <a href="https://www.instagram.com/darshit560/" class="flex-row-place-center space-x-2"
+                            target="_blank" rel="noopener noreferrer">
+                            <picture>
+                                <source media="(min-width:1024px)"
+                                    srcset="https://img.icons8.com/ios-filled/121212/instagram-new--v1.png" />
+                                <img width="20" height="20"
+                                    src="https://img.icons8.com/ios-filled/FFFFFF/instagram-new--v1.png"
+                                    alt="instagram-new--v1" />
+                            </picture>
+                            <i class="text-silverchalice lg:text-codgray">Instagram</i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div id="skills" class="mt-8 lg:order-1 lg:mt-0 lg:space-y-3">
+                <h2 class="text-wildsand font-firacode lg:text-2xl">./Skills...</h2>
+                <hr class="text-mineshaft lg:hidden" />
+                <div class="wrap gap-3 pt-2 lg:bg-wildsand lg:p-4 lg:rounded-xl lg:gap-4">
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">HTML</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">CSS</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">Tailwind CSS</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">JavaScript</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">C</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">Flutter</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">Firebase</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">Postman</p>
+                    </div>
+                    <div class="p-2 px-4 border-2px-solid-rounded border-mineshaft lg:border-codgray">
+                        <p class="text-silverchalice lg:text-codgray">Git & Github</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="education" class="space-y-1">
-            <h2 class="text-wildsand font-firacode">Education...</h2>
-            <hr class="text-mineshaft pb-2" />
+        <div id="education" class="mt-8 lg:order-5 space-y-1 lg:space-y-3 lg:mt-0">
+            <h2 class="text-wildsand font-firacode lg:text-2xl">./Education...</h2>
+            <hr class="text-mineshaft pb-2 lg:hidden" />
             <div class="rounded-lg overflow-clip">
-                <div class="bg-wildsand p-3 flex justify-between items-start font-opensans text-codgray text-sm">
+                <div class="bg-wildsand p-3 flex justify-between items-start  text-codgray text-sm">
                     <div class="pt-[3px] flex flex-col items-center">
                         <span>2027</span>
                         <span>|</span>
@@ -81,7 +152,7 @@
                         <span class="text-xs">SCGPA</span>
                     </div>
                 </div>
-                <div class="p-3 flex justify-between items-start font-opensans text-wildsand text-sm">
+                <div class="p-3 flex justify-between items-start  text-wildsand text-sm">
                     <div class="pt-[3px] flex flex-col items-center">
                         <span>2023</span>
                         <span>|</span>
@@ -96,7 +167,7 @@
                     </div>
                 </div>
                 <hr class="text-mineshaft" />
-                <div class="p-3 flex justify-between items-start font-opensans text-wildsand text-sm">
+                <div class="p-3 flex justify-between items-start  text-wildsand text-sm">
                     <div class="pt-[3px] flex flex-col items-center">
                         <span>2022</span>
                         <span>|</span>
@@ -112,45 +183,12 @@
                 </div>
             </div>
         </div>
-        <div id="skills" class="space-y-1">
-            <h2 class="text-wildsand font-firacode">Skills...</h2>
-            <hr class="text-mineshaft" />
-            <div class="flex flex-wrap gap-3 pt-2">
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">HTML</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">CSS</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">Tailwind CSS</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">JavaScript</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">Postman</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">C</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">Flutter</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">Firebase</p>
-                </div>
-                <div class="p-2 px-4 border-2 border-solid rounded-3xl border-mineshaft">
-                    <p class="text-silverchalice">Git & Github</p>
-                </div>
-            </div>
-        </div>
-        <div id="projects" class="space-y-1">
-            <h2 class="text-wildsand font-firacode">Projects...</h2>
-            <hr class="text-mineshaft pb-4" />
-            <div class="space-y-5">
+        <div id="projects" class="mt-8 space-y-1 lg:order-6 lg:col-span-2 lg:mt-0 lg:space-y-3">
+            <h2 class="text-wildsand font-firacode lg:text-2xl">./Projects...</h2>
+            <hr class="text-mineshaft pb-4 lg:hidden" />
+            <div class="space-y-5 lg:wrap lg:space-y-0 lg:justify-between lg:gap-y-3">
                 <div
-                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl font-opensans text-silverchalice text-sm">
+                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl  text-silverchalice text-sm lg:w-[30%]">
                     <img class="rounded-xl h-[12rem] w-full object-fill" src="./assets/images/infinity-links.png"
                         alt="this image shows the minimal-blog-card project created by darshit jain for devchallenges's challenge" />
                     <h3 class="mt-5 font-firacode text-wildsand text-lg font-semibold">Infinity Links</h3>
@@ -171,7 +209,7 @@
                     </div>
                 </div>
                 <div
-                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl font-opensans text-silverchalice text-sm">
+                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl  text-silverchalice text-sm lg:w-[30%]">
                     <img class="rounded-xl h-[12rem] w-full object-fill"
                         src="./assets/images/devchallenges-minimal-blog-card.png"
                         alt="this image shows the minimal-blog-card project created by darshit jain for devchallenges's challenge" />
@@ -198,7 +236,7 @@
                     </div>
                 </div>
                 <div
-                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl font-opensans text-silverchalice text-sm">
+                    class="p-3 border-2 border-solid border-mineshaft rounded-2xl  text-silverchalice text-sm lg:w-[30%]">
                     <img class="rounded-xl h-[12rem] w-full object-fill"
                         src="./assets/images/frontendmentor-recipe-page.png"
                         alt="this image shows the minimal-blog-card project created by darshit jain for devchallenges's challenge" />
@@ -226,21 +264,27 @@
                 </div>
             </div>
         </div>
-        <div id="resume" class="space-y-1">
-            <h2 class="text-wildsand font-firacode">Resume...</h2>
-            <hr class="text-mineshaft pb-4" />
+        <div id="resume" class="mt-8 space-y-1 lg:order-3 lg:row-span-3 lg:self-center lg:mt-0 lg:space-y-3">
+            <h2 class="text-wildsand font-firacode lg:text-2xl">./Resume...</h2>
+            <hr class="text-mineshaft pb-4 lg:hidden" />
             <div class="space-y-3">
                 <img class="rounded-lg overflow-hidden" src="./assets/images/resume.jpg" alt="">
                 <button class="text-silverchalice px-4 py-2 border-2 border-solid border-silverchalice rounded-3xl">
-                    <a href="./assets/docs/darshit-jain-cv.pdf" download="Darshit Jain">Download</a>
+                    <a class="flex-row-place-center space-x-2" href="./assets/docs/darshit-jain-cv.pdf"
+                        download="Darshit Jain">
+                        <img class="h-[20px] w-[20px]"
+                            src="https://img.icons8.com/material-rounded/20/FFFFFF/download--v1.png"
+                            alt="download--v1" />
+                        <p class="text-silverchalice">Download</p>
+                    </a>
                 </button>
             </div>
         </div>
-    </main>
-    <footer>
-        <p class="text-center font-opensans font-bold text-lg text-silverchalice">&copy; Copyright 2024</p>
-    </footer>
-    <script src="./index.js"></script>
+        <footer class="mt-8 lg:order-7 lg:col-span-2">
+            <p class="text-center  font-bold text-lg text-silverchalice">&copy; Copyright 2024</p>
+        </footer>
+    </div>
+</body>
 </body>
 
 </html>
