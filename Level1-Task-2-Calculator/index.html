@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div
+        class="min-w-full min-h-[100vh] bg-black lg:bg-[url('./assets/images/background.jpg')] lg:bg-no-repeat lg:bg-[cover] lg:py-4">
+        <div
+            class="min-h-[95vh] px-5 py-6 space-y-4 flex flex-col justify-end lg:w-[400px] lg:bg-black lg:m-auto lg:rounded-3xl">
+            <div id="result" class="px-3 py-2 text-[#edfd5e] text-3xl text-end bg-[#222222] rounded-lg">0</div>
+            <div class="grid grid-cols-[repeat(4,4rem)] justify-between gap-5">
+                <div id="btn" class="circularBtn operatorBtn">AC</div>
+                <div id="btn" class="circularBtn operatorBtn">( )</div>
+                <div id="btn" class="circularBtn operatorBtn">%</div>
+                <div id="btn" class="circularBtn operatorBtn">÷</div>
+                <div id="btn" class="circularBtn">7</div>
+                <div id="btn" class="circularBtn">8</div>
+                <div id="btn" class="circularBtn">9</div>
+                <div id="btn" class="circularBtn operatorBtn">X</div>
+                <div id="btn" class="circularBtn">4</div>
+                <div id="btn" class="circularBtn">5</div>
+                <div id="btn" class="circularBtn">6</div>
+                <div id="btn" class="circularBtn operatorBtn">-</div>
+                <div id="btn" class="circularBtn">1</div>
+                <div id="btn" class="circularBtn">2</div>
+                <div id="btn" class="circularBtn">3</div>
+                <div id="btn" class="circularBtn operatorBtn">+</div>
+                <div id="btn" class="circularBtn">0</div>
+                <div id="btn" class="circularBtn">.</div>
+                <div id="btn" class="circularBtn">⌫</div>
+                <div id="btn" class="circularBtn resultBtn">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
